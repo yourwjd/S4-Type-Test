@@ -42,5 +42,6 @@ button {
     background-color: #FF1477;
     color: #fff;
     font-size: 13px;
+    font-weight: 600;
     cursor: pointer;
 }
