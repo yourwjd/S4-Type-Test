@@ -68,7 +68,7 @@ h2{
     display: flex;
     margin-top: 23px;
 }
-#popup-modal li {
+#popup-modal ul li {
     display: flex;
     justify-content: center;
     align-items: center;
