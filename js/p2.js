@@ -1,68 +1,72 @@
-$(document).ready(function() {
-    // 처음에 popup-modal의 li를 숨깁니다.
-    $('#popup-modal ul li').hide();
 
-    const $popupUl = $('#popup-modal ul');
-    const $selectLi = $('#select li');
-    let clickCount = 0;
-    let loadMoreClicked = false;
+$(function(){
 
-    $selectLi.on('click', function() {
-        if (!loadMoreClicked) {
-            if (clickCount < 4) {
-                const selectedText = $(this).find('p').text();
-                const $newLi = $('<li><p>' + selectedText + '</p><img src="../img/x.png" alt="선택 취소 아이콘"></li>');
-                $popupUl.append($newLi);
-                $newLi.show();
-                clickCount++;
-                if (clickCount >= 4) {
-                    addLoadMoreButton();
-                }
-            } else {
-                // 4개 이상 선택된 경우, 추가 아이템만 생성하고 보여주지 않습니다.
-                const selectedText = $(this).find('p').text();
-                const $newLi = $('<li class="hidden"><p>' + selectedText + '</p><img src="../img/x.png" alt="선택 취소 아이콘"></li>');
-                $popupUl.append($newLi);
-                $newLi.hide();
-            }
+    $('#select li').click(function(){
+
+        $(this).toggleClass('active');
+        $('#popup-modal').css('height','210px')
+
+        if ($('#select li.active').length === 0) {
+            $('#popup-modal').css('height', '170px');
         }
     });
 
-    // 각 이미지 클릭 시 해당되는 li 제거
-    $popupUl.on('click', 'img', function() {
-        const $parentLi = $(this).closest('li');
-        const selectedText = $parentLi.find('p').text();
-        $selectLi.each(function() {
-            if ($(this).find('p').text() === selectedText) {
-                $(this).removeClass('active'); // 관련 select li에서 'active' 클래스 제거
+    $(document).ready(function() {
+        // article에서 li 클릭 시 해당 li를 popup-modal에 추가하거나 삭제
+        $('#select li').click(function() {
+            const selectedText = $(this).find('p').text();
+            const $popupUl = $('#popup-modal ul');
+
+            // 이벤트 핸들러 내에서 클릭한 li 요소를 $(this)로 참조할 수 있도록 저장
+            const $clickedLi = $(this);
+
+            const $existingLi = $popupUl.find('li:contains(' + selectedText + ')');
+
+            if ($existingLi.length) {
+                // 이미 존재하는 경우, 삭제
+                $existingLi.remove();
+
+                // 해당 li를 대상으로 'active' 클래스 제거
+                $clickedLi.removeClass('active');
+            } else {
+                // 존재하지 않는 경우, 추가        
+                const $newLi = $('<li class="active"><p>' + selectedText + '</p><img src="../img/x.png" alt="선택 취소 아이콘"></li>');
+                $popupUl.append($newLi);
+
+                // 추가한 li에 대한 이벤트 핸들러 설정
+                $newLi.on('click', 'img', function() {
+                    // 클릭한 'li'의 텍스트 가져오기
+                    const selectedText = $(this).prev('p').text();
+
+                    // 해당 텍스트와 일치하는 '#select li' 대상으로 'active' 클래스 제거
+                    $('#select li:contains(' + selectedText + ')').removeClass('active');
+
+                    // 클릭한 'li'를 삭제
+                    $(this).parent().remove();
+
+                    if ($('#popup-modal ul li').length === 0) {
+                        $('#popup-modal').css('height', '170px');
+                    }
+                });
             }
         });
-        $parentLi.remove();
 
-        if (clickCount >= 4 && $popupUl.find('li').length <= 4) {
-            // 4개 이상 선택되었고 현재 보이는 li가 4개 이하일 때 '더 보기' 버튼 제거
-            $('#load-more-button').remove();
-            loadMoreClicked = false;
+        $('#popup-modal ul').on('click', 'li img', function() {
+            // 클릭한 'li'의 텍스트 가져오기
+            const selectedText = $(this).prev('p').text();
+
+            // 해당 텍스트와 일치하는 '#select li' 대상으로 'active' 클래스 제거
+            $('#select li:contains(' + selectedText + ')').removeClass('active');
+
+            // 클릭한 'li'를 삭제
+            $(this).parent().remove();
+        });
+
+        if ($('#popup-modal ul li').length === 0) {
+            $('#popup-modal').css('height', '170px');
         }
     });
 
-    // article li를 클릭했을 때 .active 클래스 추가
-    $('article li').on('click', function() {
-        if ($(this).hasClass('active')) {
-            $(this).removeClass('active');
-        } else {
-            $(this).addClass('active');
-        }
-    });
-
-    function addLoadMoreButton() {
-        if ($('#load-more-button').length === 0) {
-            const $loadMoreButton = $('<button id="load-more-button">더 보기</button>');
-            $loadMoreButton.click(function() {
-                loadMoreClicked = true;
-                $popupUl.find('li.hidden').slice(0, 5).show().removeClass('hidden');
-            });
-            $popupUl.after($loadMoreButton);
-        }
-    }
 });
+
+
