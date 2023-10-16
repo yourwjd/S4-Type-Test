@@ -66,16 +66,18 @@ h2{
 }
 #popup-modal ul {
     display: flex;
+    max-width: 334px;
     margin-top: 23px;
+    overflow-y: hidden;
 }
-#popup-modal ul li {
+#popup-modal li {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     background: #00DB4A;
     border: none;
-    width: 60px;
+    min-width: 60px;
     height: 40px;
     border-radius: 50px;
     margin-right: 10px;
@@ -91,6 +93,6 @@ h2{
     
 }
 button{
-    position: relative;
-    top: 10px;
+    position: fixed;
+    bottom: 60px;
 }
