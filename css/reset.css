@@ -9,13 +9,12 @@
     padding: 0;
 }
 body {
-    position: fixed;
+
     font-family: 'Pretendard-Regular';
     background-color: #1E1E1E;
     color: #fff;
     
-    width: 414px;
-    height: 896px;
+
 }
 a{
     text-decoration: none;
