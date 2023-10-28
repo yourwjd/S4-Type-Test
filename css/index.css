@@ -1,17 +1,63 @@
-#img{
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
 }
-.main{
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FF1477;
+}
+
+#wrap {
+    width: 100%;
+    height: 852px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
-h1{
-    margin-top: 64px;
+
+.main {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
 }
-h2{
-    margin: 22px 0 70px 0;
+
+.main p:nth-child(2) {
+    margin-left: -196px;
+    margin-top: 20px;
+}
+.main p:nth-child(3) {
+    margin-left: 166px;
+    margin-top: 30px;
+}
+
+.main p:nth-child(4) {
+    margin-left: -180px;
+    margin-top: 20px;
+}
+
+.enneagram {
+    display: block; /* 블록 수준 요소로 변경 */
+    margin-top: -58px; /* 원하는 만큼 조절 가능 */
+    margin-left: 394px;
+}
+
+.enneagram2 {
+    display: block; /* 블록 수준 요소로 변경 */
+    margin-left: -166px;
+    margin-bottom: -71px;
 }
 
 
+.start-btn a img {
+    margin-top: 100px;
+} 
 
