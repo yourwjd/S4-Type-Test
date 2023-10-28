@@ -1,0 +1,250 @@
+#modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #101010;
+    display: none;
+    /* 초기에는 모달 숨김 */
+    align-items: center;
+}
+
+#open-modal-button {
+    background-color: rgba(68, 215, 255, 0);
+    width: 100px;
+    height: 100px;
+    margin-top: -70px;
+}
+
+#open-modal-button img {
+    margin-left: -17px;
+    margin-top: -15px;
+}
+.main_p li:last-child p {
+    margin-top: -30px;
+}
+
+.omb {
+    margin-top: -30px;
+}
+
+
+
+
+#modal.active {
+    display: block;
+}
+
+#modal img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#modal button {
+    position: relative;
+    top: 0;
+    right: 50px;
+    border: none;
+    font-size: 3rem;
+    color: #000000;
+    cursor: pointer;
+    z-index: 3;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+#modal p {
+    color: white;
+    font-size: 30px;
+    margin-left: -240px;
+}
+
+
+#close-button img {
+    margin-left: -60px;
+}
+
+input[type="checkbox"] {
+    /* margin-top: 90px; */
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked {
+    border: 1px solid #00DB4A;
+}
+
+input[type="checkbox"]:checked+label {
+    color: #00DB4A;
+}
+
+.listInner input[type="checkbox"]::before {
+    content: "\2713";
+    /* 체크 모양의 유니코드 문자 */
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 4px;
+    margin-top: -10px;
+    color: #00DB4A;
+    transform: scale(0);
+    /*처음에는 크기를 0으로 설정하여 숨김 */
+}
+
+.listInner input[type="checkbox"]:checked::before {
+    transform: scale(1.2);
+    /* 크기를 1로 확대하여 나타남 */
+}
+
+.searchBox {
+    margin: 30px 10px;
+    display: flex;
+    /* 컨테이너를 플렉스 박스로 설정 */
+    justify-content: center;
+    /* 수평 가운데 정렬 */
+}
+
+.searchBox label {
+    display: flex;
+    /* label 내부 컨텐츠도 플렉스 박스로 설정 */
+    align-items: center;
+    /* 수직 정렬을 위한 아이템의 수직 가운데 정렬 */
+}
+
+#search {
+    width: 290px;
+    justify-content: center;
+    padding: 13px 20px;
+    border-radius: 20px;
+    background: #202020;
+    color: #6C6C6C;
+    border: none;
+    margin: -35px 0;
+}
+
+.searchBox {
+    margin-top: 80px;
+}
+
+.listBox {
+    max-width: 335px;
+    height: 545px;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+.listInner {
+    background-color: #dedede00;
+    margin: 10px 5px;
+    padding: 10px 0;
+    color: rgb(255, 255, 255);
+    display: flex;
+    /* .listInner를 플렉스 박스로 설정하여 내부 아이템들을 배치 */
+    justify-content: space-between;
+    /* 아이템들을 좌우로 배치 */
+    align-items: center;
+    /* 수직 정렬을 위한 아이템의 수직 가운데 정렬 */
+    border-bottom: 1px solid #202020;
+    /* 상단 라인 추가 */
+}
+
+.listInner input {
+    order: 2;
+    /* input을 오른쪽으로 배치하기 위해 순서를 설정 */
+}
+
+.foodname {
+    font-weight: bold;
+}
+
+.back_barntext {
+    display: flex;
+    align-items: center;
+    /* 세로 중앙 정렬을 유지합니다. */
+    bottom: 0;
+    position: relative;
+    margin: 40px 0 -35px 0;
+}
+
+
+
+
+#popup-modal2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height:170px;
+    background-color: #2d2d2d;
+    border-radius: 30px 30px 0 0;
+}
+#popup-modal2 span{
+    display: block;
+    width: 90px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 15px auto;
+}
+#popup-modal2 ul {
+    display: flex;
+    max-width: 334px;
+    margin-top: 23px;
+    overflow-y: hidden;
+}
+#popup-modal2 li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: #00DB4A;
+    border: none;
+    min-width: 60px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 0 10px 0 0;
+    padding: 0 5px 0 5px;
+    text-align: center;
+}
+#popup-modal2 p {
+    font-size: 13px;
+    color: #fff;
+    left: 0;
+    position: relative;
+    margin-left: -18px;
+}
+#popup-modal2 img {
+    width: 8px;
+    height: 8px;
+    padding-left: 20px;
+}
+#popup-modal2 button{
+    width: 334px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #FF1477;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 50px;
+    
+}
+
+
+.p-m2-li {
+  
+    position: relative;
+
+
+}
+.p-m2-li img {
+    right: 0;
+    margin-left: 10px;
+}

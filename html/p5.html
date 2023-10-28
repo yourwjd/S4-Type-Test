@@ -7,6 +7,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/p2.css">
+    <link rel="stylesheet" href="../css/searchmodal.css">
+
 </head>
 <body>
     <div id="wrap">
@@ -52,8 +54,8 @@
                         <p>요거트</p>
                     </li>
                     <li>
-                        <img src="../img/etc.png" alt="그 외 아이콘">
-                        <p>그 외 </p>
+                        <button type="button" id="open-modal-button"><img src="../img/etc.png" alt="그 외 아이콘"></button>
+                        <p class="omb">그 외 </p>
                     </li>
                 </ul>
             </article>
@@ -76,7 +78,188 @@
             </div>
         </section>
     </div>
+    <div id="modal">
+        <div class="back_barntext">
+            <button id="close-button" type="button"><img src="../img/back.png" width="15"> </button>
+            <p> 육류 </p>
+        </div>
+        <div class="searchBox">
+            <label> <input type="text" id="search" onkeyup="filter()" placeholder="식재료를 검색해주세요. "><img src="#"
+                    alt=""></label>
+        </div>
+        <div class="listBox">
+            <div class="listInner">
+                <span class="foodname">기</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">구운우유</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">리코타 치즈</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">무수 유지방</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">발효유</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">분유</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">버터</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">버터밀크</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">산양유</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">생크림</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">스메타나 크림</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">양유</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">연유</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">아이스크림</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">유장</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">야쿠르트</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">요쿠르트</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">얼린요거트</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">얼린 커스타드</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">아이스밀크</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">젤라토</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">전지분유</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">조제분유</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">증류분유</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">커스타드크림</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">카이막</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">커드</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">크렘프레쉬</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">클로티드 크림</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">카세인</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">커크</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">크림치즈</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">코티지 치즈</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">탈지분유</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">탈지우유</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">포마쥬프레</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">환원우유</span>
+                <input type="checkbox" id="check" name="check">
+            </div>
+            
+            
+
+            <section id="popup-modal2">
+                <div class="main">
+                    <span></span>
+                    <ul>
+                          <li  class="p-m2-li" style="display: none;">
+                            <p>호박</p>
+                            <img src="../img/x.png" alt="선택 취소 아이콘">
+                          </li>
+                            
+                    </ul>
+                    
+                    <button type="button" onclick="location.href='../html/p6.html'">다음으로</button>
+                </div>
+            </section>
+
+        </div>
+
+
+
 
     <script src="../js/p2.js"></script>
+    <script src="../js/searchmodal.js"></script>
 </body>
 </html>
