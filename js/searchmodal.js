@@ -1,18 +1,28 @@
 $(function() {
+
+  const buttonInitialPosition = $('#popup-modal2 button').position();
+  
   $('#open-modal-button').click(function() {
     $('#modal').addClass('active');
     $('#popup-modal2').appendTo('#modal'); // #popup-modal2를 #modal 안에 추가합니다.
+    adjustPopupModalHeight();
   });
 
   $('.listInner').click(function() {
     $(this).toggleClass('active');
     if ($('.listInner.active').length > 0) {
-      const activeListInnerHeight = $('.listInner.active').length * $('.listInner').outerHeight();
-      $('#popup-modal2').css('height', activeListInnerHeight);
+      $('#popup-modal2').css('height', '210px');
     } else {
       $('#popup-modal2').css('height', '170px');
     }
   });
+  
+  $('#close-button').click(function() {
+    $('#modal').removeClass('active');
+    $('#popup-modal2').css('height', '170px');
+    $('#popup-modal2 button').css('position', 'static');
+  });
+
 
   $('.listInner input[type="checkbox"]').click(function() {
     const foodname = $(this).siblings('.foodname');
@@ -93,7 +103,7 @@ $(function() {
       });
       $selectedPM2Li.remove();
       if ($('.listInner.active').length === 0) {
-        $('#popup-modal2').css('height', '170px');
+        $('#popup-modal2').css('height', '210px');
       } else {
         const activeListInnerHeight = $('.listInner.active').length * $('.listInner').outerHeight();
         $('#popup-modal2').css('height', activeListInnerHeight);
