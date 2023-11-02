@@ -15,10 +15,10 @@ body {
     color: #fff;
     
     width: 414px;
-    height: 896px;
+    height: auto;
 }
 .main{
-    margin: 0 30px;
+    margin: 30px;
     text-align: center;
 }
 img{
