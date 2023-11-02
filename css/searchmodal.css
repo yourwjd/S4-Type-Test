@@ -8,6 +8,8 @@
     display: none;
     /* 초기에는 모달 숨김 */
     align-items: center;
+    overflow: hidden;
+    z-index:5;
 }
 
 #open-modal-button {
@@ -15,11 +17,13 @@
     width: 100px;
     height: 100px;
     margin-top: -70px;
+    z-index: 3;
 }
 
 #open-modal-button img {
     margin-left: -17px;
     margin-top: -15px;
+    z-index: 1;
 }
 .main_p li:last-child p {
     margin-top: -30px;
@@ -133,9 +137,10 @@ input[type="checkbox"]:checked+label {
 
 .listBox {
     max-width: 335px;
-    height: 545px;
+    height: 522px;
     margin: 0 auto;
     overflow-y: scroll;
+    overflow: auto;
 }
 
 .listInner {
@@ -232,8 +237,9 @@ input[type="checkbox"]:checked+label {
     font-size: 13px;
     font-weight: 600;
     cursor: pointer;
-    margin-top: 30px;
-    margin-left: 50px;
+    margin-top: 799px;
+    margin-right: -10px;
+    position: fixed;
 }
 
 
