@@ -139,7 +139,7 @@ input[type="checkbox"]:checked+label {
     max-width: 335px;
     height: 522px;
     margin: 0 auto;
-    overflow-y: hidden;
+    overflow-y: scroll;
     overflow: auto;
 
 }

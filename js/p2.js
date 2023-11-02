@@ -1,5 +1,4 @@
 
-
 $(function(){
 
     $('#select li').click(function(){
@@ -204,8 +203,4 @@ $(function() {
     } else {
       $popupModal2.css('height', '210px');
     }
-<<<<<<< HEAD
   }
-=======
-  }
->>>>>>> 8be93c915cfeece7934990d5d771fc350165f1ac
