@@ -25,8 +25,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const yValue = parseInt(slider2.value, 10);
         const bValue = parseInt(slider3.value, 10);
         const gValue = parseInt(slider4.value, 10);
-
-        // 결과 페이지로 이동하면서 선택한 값들을 쿼리 매개변수로 전달
-        window.location.href = `./result.html?p=${pValue}&y=${yValue}&b=${bValue}&g=${gValue}`;
+        
+        // 모든 슬라이더 값이 0인 경우
+        if(pValue === 0 && yValue === 0 && bValue === 0 && gValue === 0) {
+            // 경고 창 띄우기
+            alert("모든 값이 0입니다. 설정을 다시 해주세요.");
+            window.location.href = './p6.html';
+        } else {
+            // 결과 페이지로 이동하면서 선택한 값들을 쿼리 매개변수로 전달
+            window.location.href = `./result.html?p=${pValue}&y=${yValue}&b=${bValue}&g=${gValue}`;
+        }    
     });
 });
