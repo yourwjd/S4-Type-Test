@@ -193,7 +193,8 @@ document.addEventListener('DOMContentLoaded', function() {
             resultH2.innerHTML = 
             '모든 맛이 보통인 당신! <br><br> 다른 사람들과 모두 잘 어울리겠네요 하지만 가장 좋아하는 맛을 골라보는 건 어떤가요? 더욱 더 재밌는 식사가 될 거예요~';
 
-        }
+        } 
+        
                 // if (pValue === 100 && yValue === 100 && bValue === 0 && gValue === 0) {
         //     // 신맛과 매운맛이 100일 경우, 결과 페이지 내용 변경
         //     document.getElementById('result-h1').textContent = '매우 맵고 상큼한 쉐이커';
@@ -204,4 +205,6 @@ document.addEventListener('DOMContentLoaded', function() {
         //     document.getElementById('result-h2').textContent = 'a';
         // }
     }
+
+    
 });
