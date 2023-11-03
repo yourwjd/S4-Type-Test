@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function() {
             resultH2.innerHTML = 
             '모든 맛이 보통인 당신! <br><br> 다른 사람들과 모두 잘 어울리겠네요 하지만 가장 좋아하는 맛을 골라보는 건 어떤가요? 더욱 더 재밌는 식사가 될 거예요~';
 
-<<<<<<< HEAD
+
         } 
         
                 // if (pValue === 100 && yValue === 100 && bValue === 0 && gValue === 0) {
@@ -205,10 +205,6 @@ document.addEventListener('DOMContentLoaded', function() {
         //     document.getElementById('result-h1').textContent = 'aa';
         //     document.getElementById('result-h2').textContent = 'a';
         // }
-=======
-        }        
->>>>>>> ce82868c8f323d55630cd7ba15ff9b704dc27603
-    }
 
-    
-});
+        }       
+    });

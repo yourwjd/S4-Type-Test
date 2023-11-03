@@ -139,10 +139,15 @@ input[type="checkbox"]:checked+label {
     max-width: 335px;
     height: 522px;
     margin: 0 auto;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow: auto;
 
 }
+
+/* Chrome, Safari, Edge 브라우저에서 스크롤바를 숨깁니다. */
+.listBox::-webkit-scrollbar {
+    display: none;
+  }
 
 .listInner {
     background-color: #dedede00;
