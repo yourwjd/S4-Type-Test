@@ -11,6 +11,7 @@
 }
 
 body {
+    transform: scale(1.2)
     background: #FF1477;
 }
 
