@@ -2,27 +2,27 @@ li{
     list-style: none;
 }
 h1{
-    margin-top: -10px;
+    margin-top: calc(100vw * -10 / 1920)px;
 }
 h2{
-    margin-top: 64px;
+    margin-top: calc(100vw * 64 / 1920);
 }
 #title p{
-    margin: 5px 0 22px 0;
-    font-size: 10px;
+    margin: calc(100vw * 5 / 1920) 0 calc(100vw * 22 / 1920) 0;
+    font-size: calc(100vw * 10 / 1920);
     color: #C9C9C9;
 }
 
 #title a img {
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: calc(100vw * 50 / 1920);
+    margin-bottom: calc(100vw * 20 / 1920);
 }
 #text{
     display: flex;
     justify-content: space-between;
 }
 #title .page_number {
-    font-size: 20px;
+    font-size: calc(100vw * 20 / 1920);
 }
 #title .page_number .color {
     color: #6A6A6A;
@@ -30,33 +30,32 @@ h2{
 .custom-checkbox {
     display: flex;
     align-items: flex-end;
-    margin-bottom: 20px;
+    margin-bottom: calc(100vw * 20 / 1920);
 }
 input[type="checkbox"]{
-    /* margin-top: 90px; */
     appearance: none;
-    width: 17px;
-    height: 17px;
-    border: 1px solid #fff;
+    width: calc(100vw * 17 / 1920);
+    height: calc(100vw * 17 / 1920);
+    border: calc(100vw * 1 / 1920) solid #fff;
     border-radius: 50%;
 }
 input[type="checkbox"]:checked {
-    border: 1px solid #00DB4A;
+    border: calc(100vw * 1 / 1920) solid #00DB4A;
   }
 input[type="checkbox"]:checked + label{
     color:  #00DB4A;
   }
 label{
-    margin-left: 5px;
+    margin-left: calc(100vw * 5 / 1920);
 }
 
 .custom-checkbox input[type="checkbox"]::before {
     content: "\2713"; /* 체크 모양의 유니코드 문자 */
     display: inline-block;
-    font-size: 14px;
+    font-size: calc(100vw * 14 / 1920);
     font-weight: bold;
-    margin-left: 3px;
-    margin-top: -10px;
+    margin-left: calc(100vw * 3 / 1920);
+    margin-top: calc(100vw * -10 / 1920);
     color: #00DB4A;
     transform: scale(0); /*처음에는 크기를 0으로 설정하여 숨김 */
 }
@@ -66,7 +65,7 @@ label{
 
 #select article {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: calc(100vw * 50 / 1920);
 }
 #select ul {
     width: 100%;
@@ -79,47 +78,47 @@ label{
     flex-direction: column;
     box-sizing: border-box;    
     width: 33.33333%;
-    height: 106px;
-    border: solid 1px #C9C9C9;
+    height: calc(100vw * 106 / 1920);
+    border: solid calc(100vw * 1 / 1920) #C9C9C9;
     vertical-align: top;
 }
 #select li.active{
     filter: opacity(0.5) drop-shadow(0 0 0 #00DB4A) saturate(400%);
-    border: solid 3px #00DB4A;
+    border: solid calc(100vw * 3 / 1920) #00DB4A;
     color: #00DB4A;
 }
 #select img{
     position: absolute;
-    width: 37px;
-    padding-bottom: 25px;
+    width: calc(100vw * 37 / 1920);
+    padding-bottom: calc(100vw * 25 / 1920);
 }
 #select p{
     position: relative;
-    top: 25px;
+    top: calc(100vw * 25 / 1920);
     color: #fff;
-    font-size: 14px;
+    font-size: calc(100vw * 14 / 1920);
 }
 
 #popup-modal {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height:170px;
+    height: calc(100vw * 170 / 1920);
     background-color: #2d2d2d;
-    border-radius: 30px 30px 0 0;
+    border-radius: calc(100vw * 30 / 1920) calc(100vw * 30 / 1920) 0 0;
 }
 #popup-modal span{
     display: block;
-    width: 90px;
-    height: 5px;
+    width: calc(100vw * 90 / 1920);
+    height: calc(100vw * 5 / 1920);
     background-color: #fff;
-    border-radius: 50px;
-    margin: 15px auto;
+    border-radius: calc(100vw * 50 / 1920);
+    margin: calc(100vw * 15 / 1920) auto;
 }
 #popup-modal ul {
     display: flex;
-    max-width: 334px;
-    margin-top: 23px;
+    max-width: calc(100vw * 334 / 1920);
+    margin-top: calc(100vw * 23 / 1920);
     overflow-y: hidden;
 }
 #popup-modal li {
@@ -129,24 +128,24 @@ label{
     flex-direction: row;
     background: #00DB4A;
     border: none;
-    min-width: 60px;
-    height: 40px;
-    border-radius: 50px;
-    margin-right: 10px;
+    min-width: calc(100vw * 60 / 1920);
+    height: calc(100vw * 40 / 1920);
+    border-radius: calc(100vw * 50 / 1920);
+    margin-right: calc(100vw * 10 / 1920);
 }
 #popup-modal p {
-    font-size: 13px;
+    font-size: calc(100vw * 13 / 1920);
     color: #fff;
 }
 #popup-modal img {
-    width: 8px;
-    height: 8px;
-    padding-left: 5px;
+    width: calc(100vw * 8 / 1920);
+    height: calc(100vw * 8 / 1920);
+    padding-left: calc(100vw * 5 / 1920);
     
 }
 button{
     position: relative;
-    bottom: -30px;
+    bottom: calc(100vw * -30 / 1920);
 }
 
 
