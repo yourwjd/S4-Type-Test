@@ -67,7 +67,7 @@ label{
     width: 100%;
     height: calc(100vw * 300/ 414);
     margin-bottom: calc(100vw * 50/ 414);
-    overflow-y: scroll;
+    overflow-y: hidden;
     position: relative;
     
 }
