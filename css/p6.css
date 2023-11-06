@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    height: calc(100vw * 897/ 414);
 }
 li{
     list-style: none;

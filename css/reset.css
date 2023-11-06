@@ -13,7 +13,7 @@ body {
     font-family: 'Pretendard-Regular';
     background-color: #1E1E1E;
     color: #fff;
-    
+    height: calc(100vw * 897/ 414);
 
 }
 a{
