@@ -206,7 +206,7 @@ $(function() {
 
   $('#close-button').click(function() {
     $('#modal').removeClass('active');
-    $popupModal2.css('height', '170px');
+    $popupModal2.css('height', '210px');
   });
 });
 
