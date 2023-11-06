@@ -14,23 +14,23 @@
 
 #open-modal-button {
     background-color: rgba(68, 215, 255, 0);
-    width: 100px;
-    height: 100px;
-    margin-top: -70px;
+    width: calc(100vw * 100/ 414);
+    height: calc(100vw * 100/ 414);
+    margin-top: calc(100vw * -70/ 414);
     z-index: 3;
 }
 
 #open-modal-button img {
-    margin-left: -17px;
-    margin-top: -15px;
+    margin-left: calc(100vw * -17/ 414);
+    margin-top: calc(100vw * -15/ 414);
     z-index: 1;
 }
 .main_p li:last-child p {
-    margin-top: -30px;
+    margin-top: calc(100vw * -30/ 414);
 }
 
 .omb {
-    margin-top: -30px;
+    margin-top: calc(100vw * -30/ 414);
 }
 
 
@@ -50,9 +50,8 @@
 #modal button {
     position: relative;
     top: 0;
-    right: 50px;
+    right: calc(100vw * 50/ 414);
     border: none;
-    font-size: 3rem;
     color: #000000;
     cursor: pointer;
     z-index: 3;
@@ -61,13 +60,13 @@
 
 #modal p {
     color: white;
-    font-size: 30px;
-    margin-left: -240px;
+    font-size: calc(100vw * 30/ 414);
+    margin-left: calc(100vw * -240/ 414);
 }
 
 
 #close-button img {
-    margin-left: -60px;
+    margin-left: calc(100vw * -60/ 414);
 }
 
 input[type="checkbox"] {
@@ -75,12 +74,12 @@ input[type="checkbox"] {
     appearance: none;
     width: 20px;
     height: 20px;
-    border: 1px solid #fff;
+    border: calc(100vw * 1/ 414) solid #fff;
     border-radius: 50%;
 }
 
 input[type="checkbox"]:checked {
-    border: 1px solid #00DB4A;
+    border: calc(100vw * 1/ 414) solid #00DB4A;
 }
 
 input[type="checkbox"]:checked+label {
@@ -91,10 +90,10 @@ input[type="checkbox"]:checked+label {
     content: "\2713";
     /* 체크 모양의 유니코드 문자 */
     display: inline-block;
-    font-size: 14px;
+    font-size: calc(100vw * 14/ 414);
     font-weight: bold;
-    margin-left: 4px;
-    margin-top: -10px;
+    margin-left: calc(100vw * 4/ 414);
+    margin-top: calc(100vw * -10/ 414);
     color: #00DB4A;
     transform: scale(0);
     /*처음에는 크기를 0으로 설정하여 숨김 */
@@ -106,7 +105,7 @@ input[type="checkbox"]:checked+label {
 }
 
 .searchBox {
-    margin: 30px 10px;
+    margin: calc(100vw * 30/ 414) calc(100vw * 10/ 414);
     display: flex;
     /* 컨테이너를 플렉스 박스로 설정 */
     justify-content: center;
@@ -121,23 +120,23 @@ input[type="checkbox"]:checked+label {
 }
 
 #search {
-    width: 290px;
+    width: calc(100vw * 290/ 414);
     justify-content: center;
-    padding: 13px 20px;
-    border-radius: 20px;
+    padding: calc(100vw * 13/ 414) calc(100vw * 20/ 414);
+    border-radius: calc(100vw * 20/ 414);
     background: #202020;
     color: #6C6C6C;
     border: none;
-    margin: -35px 0;
+    margin: calc(100vw * -35/ 414) 0;
 }
 
 .searchBox {
-    margin-top: 80px;
+    margin-top: calc(100vw * 80/ 414);
 }
 
 .listBox {
-    max-width: 335px;
-    height: 522px;
+    max-width: calc(100vw * 335/ 414);
+    height: calc(100vw * 522/ 414);
     margin: 0 auto;
     overflow-y: hidden;
     overflow: auto;
@@ -151,8 +150,8 @@ input[type="checkbox"]:checked+label {
 
 .listInner {
     background-color: #dedede00;
-    margin: 10px 5px;
-    padding: 10px 0;
+    margin: calc(100vw * 10/ 414) calc(100vw * 5/ 414);
+    padding: calc(100vw * 10/ 414) 0;
     color: rgb(255, 255, 255);
     display: flex;
     /* .listInner를 플렉스 박스로 설정하여 내부 아이템들을 배치 */
@@ -160,7 +159,7 @@ input[type="checkbox"]:checked+label {
     /* 아이템들을 좌우로 배치 */
     align-items: center;
     /* 수직 정렬을 위한 아이템의 수직 가운데 정렬 */
-    border-bottom: 1px solid #202020;
+    border-bottom: calc(100vw * 1/ 414) solid #202020;
     /* 상단 라인 추가 */
 }
 
@@ -179,7 +178,7 @@ input[type="checkbox"]:checked+label {
     /* 세로 중앙 정렬을 유지합니다. */
     bottom: 0;
     position: relative;
-    margin: 40px 0 -35px 0;
+    margin: calc(100vw * 40/ 414) 0 calc(100vw * -35/ 414) 0;
 }
 
 
@@ -189,22 +188,22 @@ input[type="checkbox"]:checked+label {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height:170px;
+    height:calc(100vw * 117/ 414);
     background-color: #2d2d2d;
-    border-radius: 30px 30px 0 0;
+    border-radius: calc(100vw * 30/ 414) calc(100vw * 30/ 414) 0 0;
 }
 #popup-modal2 span{
     display: block;
-    width: 90px;
-    height: 5px;
+    width: calc(100vw * 90/ 414);
+    height: calc(100vw * 5/ 414);
     background-color: #fff;
-    border-radius: 50px;
-    margin: 15px auto;
+    border-radius: calc(100vw * 50/ 414);
+    margin: calc(100vw * 15/ 414) auto;
 }
 #popup-modal2 ul {
     display: flex;
-    max-width: 334px;
-    margin-top: 23px;
+    max-width: calc(100vw * 334/ 414);
+    margin-top: calc(100vw * 23/ 414);
     overflow-y: hidden;
 }
 #popup-modal2 li {
@@ -214,37 +213,37 @@ input[type="checkbox"]:checked+label {
     flex-direction: row;
     background: #00DB4A;
     border: none;
-    min-width: 60px;
-    height: 40px;
-    border-radius: 50px;
-    margin: 0 10px 0 0;
-    padding: 0 5px 0 5px;
+    min-width: calc(100vw * 60/ 414);
+    height: calc(100vw * 40/ 414);
+    border-radius: calc(100vw * 50/ 414);
+    margin: 0 calc(100vw * 10/ 414) 0 0;
+    padding: 0 calc(100vw * 5/ 414) 0 calc(100vw * 5/ 414);
     text-align: center;
 }
 #popup-modal2 p {
-    font-size: 13px;
+    font-size: calc(100vw * 13/ 414);
     color: #fff;
     left: 0;
     position: relative;
-    margin-left: -18px;
+    margin-left: calc(100vw * -18/ 414);
 }
 #popup-modal2 img {
-    width: 8px;
-    height: 8px;
-    padding-left: 20px;
+    width: calc(100vw * 8/ 414);
+    height: calc(100vw * 8/ 414);
+    padding-left: calc(100vw * 20/ 414);
 }
 #popup-modal2 button{
-    width: 334px;
-    height: 50px;
-    border-radius: 10px;
+    width: calc(100vw * 344/ 414);
+    height: calc(100vw * 50/ 414);
+    border-radius: calc(100vw * 10/ 414);
     border-style: none;
     background-color: #FF1477;
     color: #fff;
-    font-size: 13px;
+    font-size: calc(100vw * 13/ 414);
     font-weight: 600;
     cursor: pointer;
-    margin-top: 799px;
-    margin-right: -10px;
+    margin-top: calc(100vw * 799/ 414);
+    margin-right: calc(100vw * -20/ 414);
     position: fixed;
 }
 
@@ -257,5 +256,5 @@ input[type="checkbox"]:checked+label {
 }
 .p-m2-li img {
     right: 0;
-    margin-left: 10px;
+    margin-left: calc(100vw * 10/ 414);
 }

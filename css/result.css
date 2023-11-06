@@ -14,47 +14,47 @@ body {
     background-color: #1E1E1E;
     color: #fff;
     
-    width: 414px;
+    width: 100%;
     height: auto;
 }
 .main{
-    margin: 30px;
+    margin: calc(100vw * 30/ 414);
     text-align: center;
 }
 img{
-    margin-top: 50px;
+    margin-top: calc(100vw * 50/ 414);
 }
 p{
-    width: 120px;
-    margin: 50px auto 0 auto;
-    padding: 7.5px 0;
-    font-size: 11px;
-    border: solid 1px #fff;
-    border-radius: 50px;
+    width: calc(100vw * 120/ 414);
+    margin: calc(100vw * 50/ 414) auto 0 auto;
+    padding: calc(100vw * 7.5/ 414) 0;
+    font-size: calc(100vw * 11/ 414);
+    border: solid calc(100vw * 1/ 414) #fff;
+    border-radius: calc(100vw * 50/ 414);
 }
 h1{
-    margin-top: 65px;
-    font-size: 24px;
+    margin-top: calc(100vw * 650/ 414);
+    font-size: calc(100vw * 24/ 414);
     font-weight: 600;
 }
 h2{
-    width: 250px;
-    margin: 30px auto 0 auto;
-    font-size: 13px;
+    width: calc(100vw * 250/ 414);
+    margin: calc(100vw * 30/ 414) auto 0 auto;
+    font-size: calc(100vw * 13/ 414);
     font-weight: 100;
 }
 
 /*--------------button--------------*/
 
 button {
-    width: 334px;
-    height: 50px;
-    margin-top: 50px;
-    border-radius: 10px;
+    width: calc(100vw * 344/ 414);
+    height: calc(100vw * 50/ 414);
+    margin-top: calc(100vw * 50/ 414);
+    border-radius: calc(100vw * 10/ 414);
     border-style: none;
     background-color: #FF1477;
     color: #fff;
-    font-size: 13px;
+    font-size: calc(100vw * 13/ 414);
     font-weight: 600;
     cursor: pointer;
 }

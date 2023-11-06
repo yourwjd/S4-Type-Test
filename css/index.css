@@ -16,7 +16,7 @@ body {
 
 #wrap {
     width: 100%;
-    height: 852px;
+    height: calc(100vw * 897/ 414);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,39 +25,45 @@ body {
 }
 
 .main {
-    font-size: 48px;
+    font-size: calc(100vw * 48 / 414);
     font-weight: bold;
     color: #fff;
 }
 
 .main p:nth-child(2) {
-    margin-left: -196px;
-    margin-top: 20px;
+    margin-left:  calc(100vw * -196/ 414);
+    margin-top: calc(100vw * 20/ 414);
 }
 .main p:nth-child(3) {
-    margin-left: 166px;
-    margin-top: 30px;
+    margin-left: calc(100vw * 166/ 414);
+    margin-top: calc(100vw * 30/ 414);
 }
 
 .main p:nth-child(4) {
-    margin-left: -180px;
-    margin-top: 20px;
+    margin-left: calc(100vw * -180/ 414);
+    margin-top: calc(100vw * 20/ 414);
 }
 
 .enneagram {
     display: block; /* 블록 수준 요소로 변경 */
-    margin-top: -58px; /* 원하는 만큼 조절 가능 */
-    margin-left: 394px;
+    margin-top: calc(100vw * -58/ 414); /* 원하는 만큼 조절 가능 */
+    margin-left: calc(100vw * 394/ 414);
 }
 
 .enneagram2 {
     display: block; /* 블록 수준 요소로 변경 */
-    margin-left: -166px;
-    margin-bottom: -71px;
+    margin-left: calc(100vw * -166/ 414);
+    margin-bottom: calc(100vw * -71/ 414);
 }
 
 
 .start-btn a img {
-    margin-top: 100px;
+    margin-top: calc(100vw * 100/ 414);
+    width: calc(100vw * 246/ 414);
 } 
+
+.main img {
+    height: calc(100vw * 50/ 414);
+}
+
 
