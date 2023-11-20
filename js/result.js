@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('sspy');
             resultImg.src = '../img/result/sspy.png';
             resultP.textContent = '단맛 ,신맛 ㅣ SSPY';
-            resultP.style.width = '150px';
+            resultP.style.width = '33.8541vw';
             document.getElementById('result-h1').textContent = 
             '구미가 확! 당기는 새콤달콤 쉐이커';
             resultH2.innerHTML = 
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('sspb');
             resultImg.src = '../img/result/sspb.png';
             resultP.textContent = '단맛, 짠맛 ㅣ SSPB';
-            resultP.style.width = '150px';
+            resultP.style.width = '33.8541vw';
             document.getElementById('result-h1').textContent = 
             '단짠단짠 자극이 최고야! 쉐이커';
             resultH2.innerHTML = 
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('sspg');
             resultImg.src = '../img/result/sspg.png';
             resultP.textContent = '단맛, 매운맛 ㅣ SSPG';
-            resultP.style.width = '150px';
+            resultP.style.width = '33.8541vw';
             document.getElementById('result-h1').textContent = 
             '좋다 좋아! 자극의 끝판왕! 쉐이커';
             resultH2.innerHTML = 
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('ssyb');
             resultImg.src = '../img/result/ssyb.png';
             resultP.textContent = '신맛, 짠맛 ㅣ SSYB';
-            resultP.style.width = '150px';
+            resultP.style.width = '33.8541vw';
             document.getElementById('result-h1').textContent = 
             '입에 톡! 쏘는 자극을 즐기는 쉐이커';
             resultH2.innerHTML = 
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('ssyg');
             resultImg.src = '../img/result/ssyg.png';
             resultP.textContent = '신맛, 매운맛 ㅣ SSYG';
-            resultP.style.width = '150px';
+            resultP.style.width = '33.8541vw';
             document.getElementById('result-h1').textContent = 
             '맵고도 상큼함을 추구하는 쉐이커';
             resultH2.innerHTML = 
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('ssbg');
             resultImg.src = '../img/result/ssbg.png';
             resultP.textContent = '신맛 ㅣ SSBG';
-            resultP.style.width = '150px';
+            resultP.style.width = '33.8541vw';
             document.getElementById('result-h1').textContent = 
             '짜도 매워도 좋아좋아 쉐이커';
             resultH2.innerHTML = 
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('spyb');
             resultImg.src = '../img/result/spyb.png';
             resultP.textContent = '단맛, 신맛, 짠맛 ㅣ SPYB';
-            resultP.style.width = '170px';
+            resultP.style.width = '42.9687vw';
             document.getElementById('result-h1').textContent = 
             '달지만 얼큰한 매운맛이 좋은 쉐이커';
             resultH2.innerHTML = 
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('spyg');
             resultImg.src = '../img/result/sssy.png';
             resultP.textContent = '신맛 ㅣ SPYG';
-            resultP.style.width = '170px';
+            resultP.style.width = '42.9687vw';
             document.getElementById('result-h1').textContent = 
             '';
             resultH2.innerHTML = 
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('spbg');
             resultImg.src = '../img/result/spbg.png';
             resultP.textContent = '단맛, 신맛, 매운맛 ㅣ SPBG';
-            resultP.style.width = '170px';
+            resultP.style.width = '42.9687vw';
             document.getElementById('result-h1').textContent = 
             '훠궈처럼 입맛에 맞춰 먹는 쉐이커';
             resultH2.innerHTML = 
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('sybg');
             resultImg.src = '../img/result/sybg.png';
             resultP.textContent = '신맛, 짠맛, 매운맛 ㅣ SYBG';
-            resultP.style.width = '170px';
+            resultP.style.width = '42.9687vw';
             document.getElementById('result-h1').textContent = 
             '다양한 자극을 즐기는 쉐이커';
             resultH2.innerHTML = 
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('pybg');
             resultImg.src = '../img/result/pybg.png';
             resultP.textContent = '다 좋아 ㅣ PYBG';
-            resultP.style.width = '125px';
+            resultP.style.width = '31.6406vw';
             document.getElementById('result-h1').textContent = 
             '무엇이든 다 잘먹는 올라운더 쉐이커';
             resultH2.innerHTML = 
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('ssss');
             resultImg.src = '../img/result/ssss.png';
             resultP.textContent = '다 적당해 ㅣ SSSS';
-            resultP.style.width = '125px';
+            resultP.style.width = '31.6406vw';
             document.getElementById('result-h1').textContent = 
             '다 맞춰줄 수 있어! 스폰지 쉐이커';
             resultH2.innerHTML = 
@@ -196,15 +196,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
         } 
         
-                // if (pValue === 100 && yValue === 100 && bValue === 0 && gValue === 0) {
-        //     // 신맛과 매운맛이 100일 경우, 결과 페이지 내용 변경
-        //     document.getElementById('result-h1').textContent = '매우 맵고 상큼한 쉐이커';
-        //     document.getElementById('result-h2').textContent = '신맛과 매운맛을 사랑하는 당신! 맵기와 상큼함을 동시에 즐기는 것 같군요. 건강을 위해서는 조심해야 할 수도 있어요!';
-        // }
-        // else{
-        //     document.getElementById('result-h1').textContent = 'aa';
-        //     document.getElementById('result-h2').textContent = 'a';
-        // }
-
-        }       
-    });
+    }       
+});

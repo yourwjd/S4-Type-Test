@@ -4,10 +4,10 @@ $(function(){
     $('#select li').click(function(){
 
         $(this).toggleClass('active');
-        $('#popup-modal').css('height','210px')
+        $('#popup-modal').css('height','41.5364vw')
 
         if ($('#select li.active').length === 0) {
-            $('#popup-modal').css('height', '170px');
+            $('#popup-modal').css('height', '28.6458vw');
         }
     });
 
@@ -57,7 +57,7 @@ $(function(){
                     $(this).parent().remove();
 
                     if ($('#popup-modal ul li').length === 0) {
-                        $('#popup-modal').css('height', '170px');
+                        $('#popup-modal').css('height', '28.6458vw');
                     }
                 });
             }
@@ -75,7 +75,7 @@ $(function(){
         });
 
         if ($('#popup-modal ul li').length === 0) {
-            $('#popup-modal').css('height', '170px');
+            $('#popup-modal').css('height', '28.6458vw');
         }
     });
 
@@ -117,7 +117,7 @@ $(function() {
 
   function adjustModalHeight() {
     const $listItems = $popupModal2.find('ul li');
-    $popupModal2.css('height', $listItems.length > 0 ? '210px' : '170px');
+    $popupModal2.css('height', $listItems.length > 0 ? '41.5364vw' : '28.6458vw');
   }
 
   function handleListItemAddition($listInnerItem) {
@@ -145,7 +145,7 @@ $(function() {
 
   $('#open-modal-button').click(function() {
     $('#modal').addClass('active');
-    $popupModal2.appendTo('#modal').css('height', '170px');
+    $popupModal2.appendTo('#modal').css('height', '28.6458vw');
   });
 
   $listInner.find('input[type="checkbox"]').click(function(event) {
@@ -206,7 +206,7 @@ $(function() {
 
   $('#close-button').click(function() {
     $('#modal').removeClass('active');
-    $popupModal2.css('height', '210px');
+    $popupModal2.css('height', '41.5364vw');
   });
 });
 
@@ -230,8 +230,8 @@ function filter() {
   const $listInnerItems = $listInner.filter('.active');
   
   if ($listItems.length === 0 && $listInnerItems.length === 0) {
-    $popupModal2.css('height', '170px');
+    $popupModal2.css('height', '28.6458vw');
   } else {
-    $popupModal2.css('height', '210px');
+    $popupModal2.css('height', '41.5364vw');
   }
 }

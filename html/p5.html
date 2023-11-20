@@ -13,8 +13,8 @@
 <body>
     <div id="wrap">
         <section class="main" id="title">
-            <a href="p4.html"><img src="../img/back.png" alt="" width="12"></a>
-            <p class="page_number">4  <span class="color">/ 5</span></p>
+            <a href="p4.html"><img src="../img/back.png" alt="뒤로가기 아이콘"></a>
+            <h2>4 <span>/ 5</span></h2>
             <h1>당신의 불호를<br>
             알려주세요</h1>
             <div id="text">
@@ -53,9 +53,9 @@
                         <img src="../img/p5/e-5.png" alt="요거트 아이콘">
                         <p>요거트</p>
                     </li>
-                    <li>
+                    <li id="modal-li">
                         <button type="button" id="open-modal-button"><img src="../img/etc.png" alt="그 외 아이콘"></button>
-                        <p class="omb">그 외 </p>
+                        <p>그 외</p>
                     </li>
                 </ul>
             </article>
@@ -63,29 +63,22 @@
         <section id="popup-modal">
             <div class="main">
                 <span></span>
-                <ul>
-                    <!-- <li>
-                        <p>소</p>
-                        <img src="../img/x.png" alt="선택 취소 아이콘">
-                    </li>
-                    <li>
-                        <p>돼지</p>
-                        <img src="../img/x.png" alt="선택 취소 아이콘">
-                    </li> -->
-                </ul>
-                
+                <ul></ul>
                 <button type="button" onclick="location.href='./p6.html'">다음으로</button>
             </div>
         </section>
     </div>
+
     <div id="modal">
         <div class="back_barntext">
-            <button id="close-button" type="button"><img src="../img/back.png" width="15"> </button>
-            <p> 육류 </p>
+            <button id="close-button" type="button"><img src="../img/back.png" alt="뒤로가기 아이콘"> </button>
+            <p>육류</p>
         </div>
         <div class="searchBox">
-            <label> <input type="text" id="search" onkeyup="filter()" placeholder="식재료를 검색해주세요. "><img src="#"
-                    alt=""></label>
+            <label> 
+                <input type="text" id="search" onkeyup="filter()" placeholder="식재료를 검색해주세요. ">
+                <img src="../img/search.png" alt="검색 아이콘">
+            </label>
         </div>
         <div class="listBox">
             <div class="listInner">
@@ -231,15 +224,8 @@
             <section id="popup-modal2">
                 <div class="main">
                     <span></span>
-                    <ul>
-                          <li  class="p-m2-li" style="display: none;">
-                            <p>호박</p>
-                            <img src="../img/x.png" alt="선택 취소 아이콘">
-                          </li>
-                            
-                    </ul>
-                    
-                    <button type="button" onclick="location.href='../html/p6.html'">다음으로</button>
+                    <ul></ul>
+                    <button type="button" onclick="location.href='./p6.html'">다음으로</button>
                 </div>
             </section>
 
