@@ -139,26 +139,27 @@ document.addEventListener('DOMContentLoaded', function() {
             '단맛과 신맛, 짠맛을 너무나도 좋아하는 당신! <br><br>맵찔이신가요? 가끔은 매운 맛을 즐겨보도록 차근차근 단계를 높여가며 익숙해져 보세요! ';
 
         } else if (pValue === yValue && pValue === gValue && pValue > bValue) {
-            // spyg
-            console.log('spbg');
-            resultImg.src = '../img/result/sssy.png';
-            resultP.textContent = '단맛, 짠맛, 매운맛 ㅣ SPBG';
-            resultP.style.width = '42.9687vw';
-            document.getElementById('result-h1').textContent = 
-            '혈관 스파이크 건강 챙기자 쉐이커';
-            resultH2.innerHTML = 
-            '단맛과 짠맛, 매운맛을 너무나도 좋아하는 당신! <br><br> 모든 맛을 많이 드시는 건 아니시죠? 항상 이렇게 먹으면 건강이 안 좋아질 거예요! 간을 적당히해서 먹어보세요~ 건강에도 좋고 맛도 좋을 거예요. 아 혹시 신맛을 싫어하시나요..?';
+              // spbg
+              console.log('spyg');
+              resultImg.src = '../img/result/spbg.png';
+              resultP.textContent = '단맛, 신맛, 매운맛 ㅣ SPYG';
+              resultP.style.width = '42.9687vw';
+              document.getElementById('result-h1').textContent = 
+              '훠궈처럼 입맛에 맞춰 먹는 쉐이커';
+              resultH2.innerHTML = 
+              '단맛과 신맛, 매운맛을 너무나도 좋아하는 당신! <br><br>맵짠의 조화를 아직 못 느껴 보셨나봐요. 매운맛과 짠맛의 조화가 아주 일품이거든요. 한번 도전해보시는건 어떠신가요?';
 
         } else if (pValue === bValue && pValue === gValue && pValue > yValue) {
-            // spbg
-            console.log('spyg');
-            resultImg.src = '../img/result/spbg.png';
-            resultP.textContent = '단맛, 신맛, 매운맛 ㅣ SPYG';
-            resultP.style.width = '42.9687vw';
-            document.getElementById('result-h1').textContent = 
-            '훠궈처럼 입맛에 맞춰 먹는 쉐이커';
-            resultH2.innerHTML = 
-            '단맛과 신맛, 매운맛을 너무나도 좋아하는 당신! <br><br>맵짠의 조화를 아직 못 느껴 보셨나봐요. 매운맛과 짠맛의 조화가 아주 일품이거든요. 한번 도전해보시는건 어떠신가요?';
+             // spyg
+             console.log('spbg');
+             resultImg.src = '../img/result/sssy.png';
+             resultP.textContent = '단맛, 짠맛, 매운맛 ㅣ SPBG';
+             resultP.style.width = '42.9687vw';
+             document.getElementById('result-h1').textContent = 
+             '혈관 스파이크 건강 챙기자 쉐이커';
+             resultH2.innerHTML = 
+             '단맛과 짠맛, 매운맛을 너무나도 좋아하는 당신! <br><br> 모든 맛을 많이 드시는 건 아니시죠? 항상 이렇게 먹으면 건강이 안 좋아질 거예요! 간을 적당히해서 먹어보세요~ 건강에도 좋고 맛도 좋을 거예요. <br> 아 혹시 신맛을 싫어하시나요..?';
+
 
         } else if (yValue === bValue && yValue === gValue && yValue > pValue) {
             // sybg
