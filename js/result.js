@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // ssbg
             console.log('ssbg');
             resultImg.src = '../img/result/ssbg.png';
-            resultP.textContent = '신맛 ㅣ SSBG';
+            resultP.textContent = '짠맛, 매운맛 ㅣ SSBG';
             resultP.style.width = '33.8541vw';
             document.getElementById('result-h1').textContent = 
             '짜도 매워도 좋아좋아 쉐이커';
@@ -140,20 +140,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
         } else if (pValue === yValue && pValue === gValue && pValue > bValue) {
             // spyg
-            console.log('spyg');
+            console.log('spbg');
             resultImg.src = '../img/result/sssy.png';
-            resultP.textContent = '신맛 ㅣ SPYG';
+            resultP.textContent = '단맛, 짠맛, 매운맛 ㅣ SPBG';
             resultP.style.width = '42.9687vw';
             document.getElementById('result-h1').textContent = 
-            '';
+            '혈관 스파이크 건강 챙기자 쉐이커';
             resultH2.innerHTML = 
-            '맛을 너무나도 좋아하는 당신! <br><br>';
+            '단맛과 짠맛, 매운맛을 너무나도 좋아하는 당신! <br><br> 모든 맛을 많이 드시는 건 아니시죠? 항상 이렇게 먹으면 건강이 안 좋아질 거예요! 간을 적당히해서 먹어보세요~ 건강에도 좋고 맛도 좋을 거예요. 아 혹시 신맛을 싫어하시나요..?';
 
         } else if (pValue === bValue && pValue === gValue && pValue > yValue) {
             // spbg
-            console.log('spbg');
+            console.log('spyg');
             resultImg.src = '../img/result/spbg.png';
-            resultP.textContent = '단맛, 신맛, 매운맛 ㅣ SPBG';
+            resultP.textContent = '단맛, 신맛, 매운맛 ㅣ SPYG';
             resultP.style.width = '42.9687vw';
             document.getElementById('result-h1').textContent = 
             '훠궈처럼 입맛에 맞춰 먹는 쉐이커';
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // ssss
             console.log('ssss');
             resultImg.src = '../img/result/ssss.png';
-            resultP.textContent = '다 적당해 ㅣ SSSS';
+            resultP.textContent = '그저그래 ㅣ SSSS';
             resultP.style.width = '31.6406vw';
             document.getElementById('result-h1').textContent = 
             '다 맞춰줄 수 있어! 스폰지 쉐이커';
