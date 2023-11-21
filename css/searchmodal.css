@@ -91,6 +91,9 @@
         height: 3.8151vw;
         border: 0.26vw solid #fff;
         border-radius: 50%;
+        -webkit-appearance: none; /* iOS Safari 지원 */
+  -moz-appearance: none; /* Firefox 지원 */
+  appearance: none;
     }
 
     .listInner input[type="checkbox"]:checked {
@@ -109,6 +112,7 @@
         margin: -1vw 0 0 0.15vw;
         color: #00DB4A;
         transform: scale(0);
+        
     }
 
     .listInner input[type="checkbox"]:checked::before {
