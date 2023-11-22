@@ -206,8 +206,17 @@ $(function() {
 
   $('#close-button').click(function() {
     $('#modal').removeClass('active');
-    $popupModal2.css('height', '41.5364vw');
-  });
+    $('#select li').removeClass('active'); // 여기서 전체 선택을 해제합니다.
+    $('#popup-modal ul li').remove(); // 추가된 리스트 아이템들도 모두 삭제합니다.
+
+    // 이 부분은 모달 높이를 조절하는 로직입니다.
+    const $popupModal = $('#popup-modal');
+    if ($popupModal.find('ul li').length === 0) {
+        $popupModal.css('height', '28.6458vw');
+    } else {
+        $popupModal.css('height', '41.5364vw');
+    }
+});
 });
 
 function filter() {
